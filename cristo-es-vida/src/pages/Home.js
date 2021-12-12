@@ -1,9 +1,10 @@
 import React from 'react'
+import MainBanner from '../components/Home/Body/MainBanner/MainBanner'
 
 export default function Home() {
     return (
         <div>
-            <h1>Home</h1>
+            <MainBanner/>
         </div>
     )
 }
