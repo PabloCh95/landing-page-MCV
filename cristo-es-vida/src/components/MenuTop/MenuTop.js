@@ -20,7 +20,7 @@ export default function MenuTop() {
                     <div className="menu-top-mobile-icon" onClick={()=>setShowMenu(!showMenu)} >
                         {showMenu ? <FaTimes color='#ffffff'/> : <FaBars color='#ffffff' />}
                     </div>
-                    <ul className='menu-top-content' open={showMenu} style={{left:showMenu? "-40px" : "-110%"}}>
+                    <ul className='menu-top-content' open={showMenu} style={{left:showMenu? "-40px" : "-115%"}}>
                     {
                         arrayMenuTop.map(item => {
                             
