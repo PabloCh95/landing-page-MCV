@@ -1,29 +1,13 @@
-.main-banner {
-  position: relative;
-  background-image: url("../../../../assets/img/jpg/home-v2.jpg");
-  height: 500px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-}
-.main-banner-dark {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #000;
-  opacity: 0.6;
-}
 .main-banner-text {
   display: flex;
   width: 100%;
   justify-content: center;
   align-items: center;
-  height: 100%;
+  height: 500px;
 }
 .main-banner-text h2 {
-  color: #fff;
+  position: absolute;
+  color: #ffffff;
   font-size: 60px;
   font-weight: bold;
   line-height: 1;

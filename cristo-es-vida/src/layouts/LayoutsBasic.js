@@ -4,11 +4,16 @@ import {Route,Switch} from 'react-router-dom'
 //componentes
 import MenuTop from '../components/MenuTop/MenuTop';
 
+//css
+import './LayoutsBasic.css'
+
 export default function LayoutsBasic({routes}) {
     return (
-        <div>
+        <div className="main-banner">
+            <div className="main-banner-dark">
                 <MenuTop/>
                 <LoadRoutes routes={routes}  />
+            </div>
         </div>
     )
 }

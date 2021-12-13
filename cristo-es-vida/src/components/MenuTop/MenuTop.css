@@ -1,12 +1,12 @@
 .menu-top {
-  position: relative;
   width: 100%;
 }
 .menu-top-content {
-  position: absolute;
   display: flex;
-  background-color: red;
+  justify-content: center;
+  align-items: center;
   width: 100%;
+  height: 70px;
 }
 .menu-top-content h1 {
   color: #ffffff;

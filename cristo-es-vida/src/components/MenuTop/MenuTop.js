@@ -7,7 +7,7 @@ export default function MenuTop() {
     return (
             <header className='menu-top'>
                 <div className="menu-top-content">
-                    <h1>Header</h1>
+                   
                 </div>
             </header>
     )
