@@ -10,10 +10,9 @@ import './LayoutsBasic.css'
 export default function LayoutsBasic({routes}) {
     return (
         <div className="main-banner">
-            <div className="main-banner-dark">
                 <MenuTop/>
                 <LoadRoutes routes={routes}  />
-            </div>
+                
         </div>
     )
 }
@@ -21,7 +20,7 @@ export default function LayoutsBasic({routes}) {
 function LoadRoutes({routes}){
     return (
     <Switch>
-        {  routes.map((route,index)=>(
+        {routes.map((route,index)=>(
         <Route
               key={index}
               path={route.path}
