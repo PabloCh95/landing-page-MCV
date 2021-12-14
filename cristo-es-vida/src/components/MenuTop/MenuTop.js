@@ -4,6 +4,7 @@ import {FaTimes,FaBars} from 'react-icons/fa'
 import { IconContext } from 'react-icons'
 
 import {arrayMenuTop} from '../../routes/routes-menu-top.js';
+import SocialLinks from '../SocialLinks/SocialLinks.js';
 
 import './MenuTop.css'
 
@@ -34,7 +35,12 @@ export default function MenuTop() {
                                 </li>
                             );
                         })
+                        
+                       
                     }
+                        <li>
+                            <SocialLinks />
+                        </li>
                     </ul>
                     </IconContext.Provider>
                 </nav>
