@@ -4,6 +4,7 @@ import {FaTimes,FaBars} from 'react-icons/fa'
 import { IconContext } from 'react-icons'
 
 import {arrayMenuTop} from '../../routes/routes-menu-top.js';
+import SocialLinks from '../SocialLinks/SocialLinks.js';
 
 import './MenuTop.css'
 
@@ -25,16 +26,21 @@ export default function MenuTop() {
                         arrayMenuTop.map(item => {
                             
                             return(
-                                <li key={item.id}>
-                                    <Link to={item.url} key={item.url} >
-                                        <div>
-                                            <p>{item.name}</p>
+                                <li key={item.id} onClick={()=>setShowMenu(false)}>
+                                    <Link to={item.url} key={item.url}>
+                                        <div >
+                                            <p >{item.name}</p>
                                         </div>
                                     </Link>
                                 </li>
                             );
                         })
+                        
+                       
                     }
+                        <li>
+                            <SocialLinks />
+                        </li>
                     </ul>
                     </IconContext.Provider>
                 </nav>

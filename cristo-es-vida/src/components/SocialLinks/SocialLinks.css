@@ -1,0 +1,29 @@
+.social-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.social-links a {
+  display: flex;
+  margin: 0 10px 0 20px;
+}
+
+.social-links a svg {
+  width: 2rem;
+  height: 2rem;
+}
+
+#Instagram {
+  background: #d6249f;
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+}
