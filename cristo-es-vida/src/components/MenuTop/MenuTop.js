@@ -25,10 +25,10 @@ export default function MenuTop() {
                         arrayMenuTop.map(item => {
                             
                             return(
-                                <li key={item.id}>
-                                    <Link to={item.url} key={item.url} >
-                                        <div>
-                                            <p>{item.name}</p>
+                                <li key={item.id} onClick={()=>setShowMenu(false)}>
+                                    <Link to={item.url} key={item.url}>
+                                        <div >
+                                            <p >{item.name}</p>
                                         </div>
                                     </Link>
                                 </li>
