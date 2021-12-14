@@ -90,7 +90,7 @@
     position: absolute;
     top: 70px;
     width: 100%;
-    height: 110vh;
+    height: 100%;
     justify-content: center;
     flex-direction: column;
     align-items: center;
