@@ -1,9 +1,11 @@
 import React from 'react'
 
+import MainSongs from '../components/Songs/MainSongs'
+
 export default function Canciones() {
     return (
         <div>
-            <h1>Canciones</h1>
+            <MainSongs/>
         </div>
     )
 }
