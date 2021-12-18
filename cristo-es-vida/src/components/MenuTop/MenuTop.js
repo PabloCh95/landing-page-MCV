@@ -5,28 +5,43 @@ import { IconContext } from 'react-icons'
 
 import {arrayMenuTop} from '../../routes/routes-menu-top.js';
 import SocialLinks from '../SocialLinks/SocialLinks.js';
+import Logotipo from '../../assets/img/png/Logo-CEV.png';
+
+//redux
+import {useDispatch} from 'react-redux';
+import {clickOnMenu} from '../../store/showMenuSlice';
 
 import './MenuTop.css'
 
 export default function MenuTop() {
-    const [showMenu, setShowMenu] = useState(false)
-
+    const [dataMenu,setDataMenu] = useState(false);
+    const dispatch = useDispatch();
+    const onClickMenu = () => {
+        setDataMenu(!dataMenu);
+        dataMenu?
+        (setTimeout(() => {
+            dispatch(clickOnMenu(!dataMenu));
+        }, 0)): (setTimeout(() => {
+            dispatch(clickOnMenu(!dataMenu))
+        }, 500));
+            
+    }
     return (
             <header className='menu-top'>
                 <nav className="menu-top-wrapper">
                     <IconContext.Provider value={{style:{fontSize:"2em"}}}>
                     <Link to="/" className='menu-top-logo'>
-                        <p>Home</p>
+                        <img src={Logotipo}/>
                     </Link>
-                    <div className="menu-top-mobile-icon" onClick={()=>setShowMenu(!showMenu)} >
-                        {showMenu ? <FaTimes color='#ffffff'/> : <FaBars color='#ffffff' />}
+                    <div className="menu-top-mobile-icon" onClick={onClickMenu} >
+                        {dataMenu ? <FaTimes color='#ffffff'/> : <FaBars color='#ffffff' />}
                     </div>
-                    <ul className='menu-top-content' open={showMenu} style={{left:showMenu? "-40px" : "-115%"}}>
+                    <ul className='menu-top-content' style={{left:dataMenu? "-40px" : "-115%"}}>
                     {
                         arrayMenuTop.map(item => {
                             
                             return(
-                                <li key={item.id} onClick={()=>setShowMenu(false)}>
+                                <li key={item.id} onClick={onClickMenu}>
                                     <Link to={item.url} key={item.url}>
                                         <div >
                                             <p >{item.name}</p>

@@ -4,10 +4,19 @@
   justify-content: center;
   align-items: center;
   height: 500px;
+  text-align: center;
 }
 .main-banner-text h2 {
   color: #ffffff;
+  text-shadow: #000 0 0 5px;
   font-size: 60px;
+  font-weight: bold;
+  line-height: 1;
+}
+.main-banner-text h3 {
+  color: #ffffff;
+  text-shadow: #000 0 0 5px;
+  font-size: 50px;
   font-weight: bold;
   line-height: 1;
 }

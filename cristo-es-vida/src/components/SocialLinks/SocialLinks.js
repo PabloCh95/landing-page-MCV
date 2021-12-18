@@ -12,7 +12,7 @@ export default function SocialLinks() {
     return (
         <div className="social-links"  >
           <a
-            href="https://www.facebook.com/gerardocristian.pinasco"
+            href="https://www.facebook.com/MinisterioCristoesVida/"
             className="Facebook"
             target="_blank"
             rel="noopener noreferrer"

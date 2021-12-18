@@ -1,14 +1,15 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-import { arrayMenuTop } from '../../../../routes/routes-menu-top';
+
 
 import './MainBanner.css'
 
 export default function MainBanner() {
-    return (       
+    return (
            <div className="main-banner-text">
-                    <h2>El Main Banner</h2>
+               <h2>Bienvenido a Cristo es Vida <br/><h3>Navidad Es Jesús</h3></h2> 
+                
             </div>
     );
 }

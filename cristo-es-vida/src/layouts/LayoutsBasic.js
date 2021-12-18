@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import {Route,Switch} from 'react-router-dom'
 
 //componentes
@@ -9,15 +9,14 @@ import './LayoutsBasic.css'
 
 export default function LayoutsBasic({routes}) {
     return (
-        <div className="main-banner">
+        <div className='layout'>
                 <MenuTop/>
-                <LoadRoutes routes={routes}  />
-                
+                <LoadRoutes routes={routes} />
         </div>
     )
 }
 
-function LoadRoutes({routes}){
+function LoadRoutes({routes,showMenu}) {
     return (
     <Switch>
         {routes.map((route,index)=>(
