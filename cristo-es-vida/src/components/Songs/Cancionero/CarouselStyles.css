@@ -1,0 +1,26 @@
+.texto {
+    margin-top: 8% ;
+}
+
+p {
+    font-size:2.5rem;
+    width: 20;
+}
+
+.App {
+    display:initial;
+}
+
+.Carousel {
+    width: 85%;
+    margin-left: 7%;
+}
+
+
+.jsUavU {
+    width: 90% !important;
+    height: 500px !important;
+    display: initial !important;
+    align-items: center;
+    justify-content: center;
+}
