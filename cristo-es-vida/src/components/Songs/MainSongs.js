@@ -1,6 +1,4 @@
-import React from "react";
-
-import Prueba from './Cancionero/prueba'
+import React from "react"
 
 import ReyDePaz from './Cancionero/ReyDePaz'
 
